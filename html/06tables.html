@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 연습</title>
+</head>
+
+<body>
+    <img src="web_tree.png" width="60%" height="60%">
+
+    <hr>
+
+    html5 부터 굵기, 정렬 같은 효과는 css를 통해서 바꾸도록 권장
+
+    <hr>
+
+    <main>
+        <table>
+            <caption>테이블 전체 이름</caption>
+            <!-- thead, tbody, tfoot 시멘틱 구조를 위해 -->
+            <!-- 먼저 위 태그로 영역을 나누고 rowspan, colspan을 하는게 좋음. 아니면 구조가 바뀔수도있음 -->
+            <thead>
+                <tr>
+                    <th>테이블 헤더1</th>
+                    <th>테이블 헤더2</th>
+                    <th>테이블 헤더3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>테이블 데이터1</td>
+                    <td>테이블 데이터2</td>
+                    <td rowspan="2">테이블 데이터3</td>
+                </tr>
+                <tr>
+                    <td>테이블 데이터4</td>
+                    <td>테이블 데이터5</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>테이블 데이터7</td>
+                    <td>테이블 데이터8</td>
+                    <td>테이블 데이터9</td>
+                </tr>
+                <tr>
+                    <td colspan="2">colspan 속성으로 컬럼 2개만큼 합침</td>
+                    <td>나머지 하나</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+</body>
+
+</html>
